@@ -44,9 +44,8 @@ test('get only non-completed tasks', () => {
         {id: v1(), title: 'sugar', isDone: true},
     ]
 
-    const noncompletedTasks = tasks.filter(task => !task.isDone)
-
-    expect(noncompletedTasks.length).toBe(2)
-    expect(noncompletedTasks[0].title).toBe('bread')
-    expect(noncompletedTasks[1].title).toBe('salt')
+    const nonCompletedTasks = tasks.filter(task => !task.isDone)
+    expect(nonCompletedTasks.length).toBe(2)
+    expect(nonCompletedTasks[0].title).toBe('bread')
+    expect(nonCompletedTasks[1].title).toBe('salt')
 })
